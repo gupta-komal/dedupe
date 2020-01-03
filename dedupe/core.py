@@ -425,7 +425,7 @@ def sniff_id_type(ids):
         python_type = (unicode, 256)
     else:
         int_type(example)  # make sure we can cast to int
-        python_type = int_type
+        python_type = np.int64
 
     return python_type
 
